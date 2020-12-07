@@ -1,0 +1,20 @@
+<h2 [textContent]="title"></h2>
+
+
+<div>
+  <label>{{ pupil.firstName }}</label>&nbsp;
+  <label> {{ pupil.lastName }}</label>
+  geboren am {{pupil.birthDate.toString() | date:'dd.MM.yyyy'}}
+  hat ein Rating von {{pupil.rating | number: '1.2-2'}}
+  <br>
+  <label>{{pupil.description}}</label>
+</div>
+<br>
+<div>
+  <label>{{ pupil.firstName }}</label>&nbsp;
+  <label> {{ pupil.lastName }}</label>
+  geboren am {{pupil.birthDate.toString() | date:'dd.MM.yyyy'}}
+  hat ein Rating von {{pupil.rating | number: '1.2-2'}}
+  <br>
+  <label>{{pupil.description | shortenText: "50"}}</label>
+</div>
